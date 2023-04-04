@@ -1,0 +1,25 @@
+.div--carrito {
+    display: flex;
+    margin-left: 50px;
+    gap: 30px;
+   
+    .div__form {
+        background-image: radial-gradient($color, black);
+        display:flex;
+        flex-direction: column;
+        gap:20px;
+        padding:20px;
+    }
+
+   .div__p--carrito { 
+       .bastardilla {
+        font-style: italic;
+        font-size: 20px;
+       }
+   }
+
+   .div__img--carrito{
+    height: 400px;
+    width: 500px;
+   }
+}

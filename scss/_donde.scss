@@ -1,0 +1,29 @@
+.section--donde{
+    display: grid;
+    grid-template-areas: "texto texto" "div foto"; 
+    margin: $margin;
+    gap: 30px;
+
+    .section__p--mapa {
+        grid-area: texto;
+    }
+
+    .section__div--mapa {
+        grid-area: div;
+        background-image: radial-gradient($color, black);
+        padding-left: 30px;
+        padding-top:10px;
+    
+        .section__iframe--mapa{
+            height: 400px;
+            width: 500px;
+        }
+    }
+        
+    .section__img--mapa {
+        grid-area: foto;
+        height: 500px;
+        width: 600px;
+    }
+    }
+
