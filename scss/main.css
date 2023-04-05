@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/*agrego variables*/
 .section1--index {
   display: flex;
   justify-content: flex-start;
@@ -45,6 +47,7 @@
   width: 350px;
 }
 
+/*agrego mixin, maqueto con grid y flex*/
 .section1--conocenos {
   display: grid;
   grid-template-areas: "foto1 foto3 foto5" "foto2 foto3 foto6" "foto2 foto4 foto6";
@@ -109,6 +112,7 @@
   font-weight: bold;
 }
 
+/*maqueto con grid*/
 .section--donde {
   display: grid;
   grid-template-areas: "texto texto" "div foto";
@@ -155,10 +159,12 @@
   width: 500px;
 }
 
+/*maqueto con flex*/
 .div--contacto {
   display: flex;
   margin-left: 50px;
   gap: 30px;
+  /*agrego gradiente*/
 }
 .div--contacto .div__form--contacto {
   background-image: radial-gradient(rgb(26, 12, 22), black);
@@ -172,6 +178,7 @@
   width: 550px;
 }
 
+/*página fechas tiene el style por bootstrap*/
 * {
   margin: 0;
   bottom: 0;
@@ -194,24 +201,32 @@
   justify-content: flex-end;
   gap: 20px;
   padding-right: 50px;
+  padding-top: 50px;
 }
 .footer .footer__img {
   color: cornsilk;
+}
+.footer .footer__img:hover {
+  color: rgb(26, 12, 22);
+  transform: scale(1.15);
 }
 .footer .footer__h4 {
   margin: 10px;
 }
 
 .button {
-  height: 70px;
-  width: 100px;
+  height: 50px;
+  width: 80px;
   background-color: rgb(65, 57, 57);
   color: cornsilk;
+  font-weight: bold;
   border-radius: 15px;
+  /*agrego transciones y &*/
 }
 .button:hover {
   background-color: cornsilk;
   color: rgb(65, 57, 57);
+  transform: scale(1.15);
 }
 
 @media (max-width: 768px) {
@@ -225,27 +240,27 @@
     padding-left: 50px;
   }
   .section1--conocenos .section1__img1 {
-    height: 350px;
+    height: 250px;
     width: 290px;
   }
   .section1--conocenos .section1__img2 {
-    height: 350px;
+    height: 450px;
     width: 290px;
   }
   .section1--conocenos .section1__img3 {
-    height: 350px;
+    height: 450px;
     width: 290px;
   }
   .section1--conocenos .section1__img4 {
-    height: 350px;
+    height: 250px;
     width: 290px;
   }
   .section1--conocenos .section1__img5 {
-    height: 350px;
+    height: 250px;
     width: 290px;
   }
   .section1--conocenos .section1__img6 {
-    height: 350px;
+    height: 450px;
     width: 290px;
   }
   .section--donde .section--div__mapa .section__iframe--mapa {
@@ -265,7 +280,11 @@
   .cuerpo .titulos {
     font-size: 30px;
   }
-  .footer__h4 {
+  .footer {
+    padding-right: 10px;
+    padding-top: 15px;
+  }
+  .footer .footer__h4 {
     font-size: 25px;
   }
   .section1--index {
@@ -318,33 +337,33 @@
   }
   .section1--conocenos .section1__img1 {
     grid-area: foto1;
-    height: 300px;
-    width: 350px;
+    height: 200px;
+    width: 250px;
   }
   .section1--conocenos .section1__img2 {
     grid-area: foto2;
-    height: 500px;
-    width: 350px;
+    height: 400px;
+    width: 250px;
   }
   .section1--conocenos .section1__img3 {
     grid-area: foto3;
-    height: 500px;
-    width: 350px;
+    height: 400px;
+    width: 250px;
   }
   .section1--conocenos .section1__img4 {
     grid-area: foto4;
-    height: 300px;
-    width: 350px;
+    height: 200px;
+    width: 250px;
   }
   .section1--conocenos .section1__img5 {
     grid-area: foto5;
-    height: 300px;
-    width: 350px;
+    height: 200px;
+    width: 250px;
   }
   .section1--conocenos .section1__img6 {
     grid-area: foto6;
-    height: 500px;
-    width: 350px;
+    height: 400px;
+    width: 250px;
   }
   .section2--conocenos {
     display: flex;
