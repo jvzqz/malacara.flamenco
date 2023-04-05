@@ -1,8 +1,11 @@
+/*maqueto con flex*/
+
 .div--contacto {
     display: flex;
     margin-left: 50px;
     gap: 30px;
 
+    /*agrego gradiente*/
     .div__form--contacto {
         background-image: radial-gradient($color, black);
         display: flex;
