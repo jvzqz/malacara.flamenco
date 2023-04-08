@@ -230,6 +230,12 @@
 }
 
 @media (max-width: 768px) {
+  .section1--index {
+    align-items: center;
+  }
+  .section1--index .section1__h1--index {
+    font-size: 30px;
+  }
   .section1--index .section1__h2--index {
     font-size: 60px;
   }
@@ -239,37 +245,64 @@
   .section2__div1--index .section2__img1--index {
     padding-left: 50px;
   }
+  .section1--conocenos {
+    grid-template-areas: "foto1 foto4 foto5" "foto2 foto3 foto6";
+  }
   .section1--conocenos .section1__img1 {
+    grid-area: foto1;
     height: 250px;
     width: 290px;
   }
   .section1--conocenos .section1__img2 {
+    grid-area: foto2;
     height: 450px;
     width: 290px;
   }
   .section1--conocenos .section1__img3 {
+    grid-area: foto3;
     height: 450px;
     width: 290px;
   }
   .section1--conocenos .section1__img4 {
+    grid-area: foto4;
     height: 250px;
     width: 290px;
   }
   .section1--conocenos .section1__img5 {
+    grid-area: foto5;
     height: 250px;
     width: 290px;
   }
   .section1--conocenos .section1__img6 {
+    grid-area: foto6;
     height: 450px;
     width: 290px;
+  }
+  .section--donde {
+    grid-template-areas: "texto" "div" "foto";
+  }
+  .section--donde .section__p--mapa {
+    grid-area: texto;
+  }
+  .section--donde .section--div__mapa {
+    grid-area: div;
   }
   .section--donde .section--div__mapa .section__iframe--mapa {
     height: 300px;
     width: 420px;
   }
   .section--donde .section--img__mapa {
+    grid-area: foto;
     height: 300px;
     width: 420px;
+  }
+  .div--contacto {
+    flex-direction: column;
+    margin-left: 30px;
+  }
+  .div--carrito {
+    flex-direction: column;
+    margin-left: 30px;
   }
 }
 @media (max-width: 578px) {
@@ -330,7 +363,7 @@
     margin: 10px;
   }
   .section1--conocenos {
-    grid-template-areas: "foto1" "foto2" "foto4" "foto3" "foto5" "foto6" "foto7" "foto8" "foto9";
+    grid-template-areas: "foto1" "foto2" "foto4" "foto3" "foto5" "foto6";
     gap: 20px;
     margin: 30px;
     justify-content: center;
