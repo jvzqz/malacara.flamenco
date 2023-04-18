@@ -12,47 +12,46 @@
     gap: 10px;
 
   .section1__img1 {
-    grid-area: foto1;
-    @include tamaño (300px,400px)
+      grid-area: foto1;
+      @include tamaño (300px,400px)
     }
 
   .section1__img2 {
-    grid-area: foto2;
-    @include tamaño (610px,400px)
+      grid-area: foto2;
+      @include tamaño (610px,400px)
   }
 
   .section1__img3 {
-    grid-area: foto3;
-    @include tamaño (610px,400px)
+      grid-area: foto3;
+      @include tamaño (610px,400px)
   }
 
   .section1__img4 {
-    grid-area: foto4;
-    @include tamaño (300px,400px)
+      grid-area: foto4;
+      @include tamaño (300px,400px)
   }
 
   .section1__img5 {
-    grid-area: foto5;
-    @include tamaño (300px,400px)
+      grid-area: foto5;
+      @include tamaño (300px,400px)
   }
 
   .section1__img6 {
-    grid-area: foto6;
-    @include tamaño (610px,400px)
+      grid-area: foto6;
+      @include tamaño (610px,400px)
   }
 }
 
 .div--conocenos{
-  display: flex;
-  justify-content: center;
-  margin: $margin;
+    display: flex;
+    justify-content: center;
+    margin: $margin;
 
-      .div__h3--conocenos {
-      font-size: 40px;
-      font-weight: bold;
-      }
+    .div__h3--conocenos {
+        font-size: 40px;
+        font-weight: bold;
+    }
 }
-
 
 .section2--conocenos {
     display: flex;
@@ -66,9 +65,9 @@
     justify-content: center;
     margin: $margin;
     
-      .div__h3--conocenos {
-        font-size: 40px;
-        font-weight: bold;
-      }
+    .div__h3--conocenos {
+       font-size: 40px;
+       font-weight: bold;
+    }
 }
 

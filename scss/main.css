@@ -24,12 +24,11 @@
   flex-direction: row;
   padding-left: 30px;
   margin-top: 30px;
-  background-image: radial-gradient(rgb(26, 12, 22), black);
+  background-image: radial-gradient(rgb(106, 6, 113), rgb(26, 12, 22));
 }
 .section2__div1--index .section2__img1--index {
   height: 500px;
   width: 700px;
-  padding-top: 15px;
 }
 .section2__div1--index .section2__span--index {
   font-family: "Times New Roman", Times, serif;
@@ -112,70 +111,66 @@
   font-weight: bold;
 }
 
-/*maqueto con grid*/
 .section--donde {
-  display: grid;
-  grid-template-areas: "texto texto" "div foto";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 30px;
-  gap: 30px;
 }
-.section--donde .section__p--mapa {
-  grid-area: texto;
+
+.section__div--mapa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  background-image: radial-gradient(rgb(106, 6, 113), rgb(26, 12, 22));
+  border-radius: 15px;
+  gap: 20px;
+  padding: 30px;
 }
-.section--donde .section__div--mapa {
-  grid-area: div;
-  background-image: radial-gradient(rgb(26, 12, 22), black);
-  padding-left: 30px;
-  padding-top: 10px;
-}
-.section--donde .section__div--mapa .section__iframe--mapa {
+.section__div--mapa .section__iframe--mapa {
   height: 400px;
   width: 500px;
-}
-.section--donde .section__img--mapa {
-  grid-area: foto;
-  height: 500px;
-  width: 600px;
 }
 
 .div--carrito {
   display: flex;
-  margin-left: 50px;
-  gap: 30px;
+  justify-content: center;
 }
 .div--carrito .div__form {
-  background-image: radial-gradient(rgb(26, 12, 22), black);
+  background-image: radial-gradient(rgb(106, 6, 113), rgb(26, 12, 22));
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 20px;
+  justify-content: space-around;
+  gap: 10px;
+  height: 500px;
+  width: 400px;
+  padding: 10px;
 }
 .div--carrito .div__p--carrito .bastardilla {
   font-style: italic;
   font-size: 20px;
 }
-.div--carrito .div__img--carrito {
-  height: 400px;
-  width: 500px;
-}
 
 /*maqueto con flex*/
 .div--contacto {
   display: flex;
+  justify-content: center;
   margin-left: 50px;
   gap: 30px;
   /*agrego gradiente*/
 }
 .div--contacto .div__form--contacto {
-  background-image: radial-gradient(rgb(26, 12, 22), black);
+  background-image: radial-gradient(rgb(106, 6, 113), rgb(26, 12, 22));
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  height: 550px;
+  width: 400px;
   gap: 20px;
   padding: 20px;
-}
-.div--contacto .div__img--contacto {
-  height: 450px;
-  width: 550px;
 }
 
 /*página fechas tiene el style por bootstrap*/
@@ -229,7 +224,7 @@
   transform: scale(1.15);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 579px) {
   .section1--index {
     align-items: center;
   }
@@ -239,14 +234,20 @@
   .section1--index .section1__h2--index {
     font-size: 60px;
   }
+  .section1--index .section1__img--index {
+    height: 430px;
+    width: 500px;
+  }
   .section2__div1--index {
     flex-direction: column-reverse;
   }
   .section2__div1--index .section2__img1--index {
     padding-left: 50px;
+    height: 370px;
+    width: 470px;
   }
   .section1--conocenos {
-    grid-template-areas: "foto1 foto4 foto5" "foto2 foto3 foto6";
+    grid-template-areas: "foto2 foto1" "foto2 foto5" "foto3 foto6" "foto3 foto4";
   }
   .section1--conocenos .section1__img1 {
     grid-area: foto1;
@@ -255,12 +256,12 @@
   }
   .section1--conocenos .section1__img2 {
     grid-area: foto2;
-    height: 450px;
+    height: 550px;
     width: 290px;
   }
   .section1--conocenos .section1__img3 {
     grid-area: foto3;
-    height: 450px;
+    height: 550px;
     width: 290px;
   }
   .section1--conocenos .section1__img4 {
@@ -275,26 +276,19 @@
   }
   .section1--conocenos .section1__img6 {
     grid-area: foto6;
-    height: 450px;
+    height: 350px;
     width: 290px;
   }
-  .section--donde {
-    grid-template-areas: "texto" "div" "foto";
+  .section--donde .section__div--mapa {
+    width: 460px;
   }
-  .section--donde .section__p--mapa {
-    grid-area: texto;
-  }
-  .section--donde .section--div__mapa {
-    grid-area: div;
-  }
-  .section--donde .section--div__mapa .section__iframe--mapa {
+  .section--donde .section__div--mapa .section__iframe--mapa {
     height: 300px;
     width: 420px;
   }
-  .section--donde .section--img__mapa {
-    grid-area: foto;
-    height: 300px;
-    width: 420px;
+  .carousel-inner .carousel-item .carousel__img {
+    height: 550px;
+    width: 480px;
   }
   .div--contacto {
     flex-direction: column;
@@ -321,41 +315,45 @@
     font-size: 25px;
   }
   .section1--index {
-    align-items: center;
-    margin-left: 15px;
+    align-items: flex-start;
+    margin-left: 5px;
   }
   .section1--index .section1__h2--index {
     font-size: 30px;
     font-weight: bold;
-    margin-left: 3px;
     padding: 0;
   }
   .section1--index .section1__h1--index {
-    font-size: 30px;
-    margin-left: 15px;
+    font-size: 25px;
+    margin-left: 7px;
     padding: 0;
   }
   .section1--index .section1__img--index {
-    height: 330px;
-    width: 370px;
+    height: 310px;
+    width: 290px;
+    margin-left: 5px;
   }
   .section2__div1--index {
     flex-direction: column-reverse;
     align-items: center;
-    margin: 10px;
+    width: 300px;
+    margin: 5px;
     padding: 0;
   }
   .section2__div1--index .section2__img1--index {
-    height: 300px;
-    width: 350px;
+    height: 250px;
+    width: 270px;
   }
-  .section2__div1--index {
+  .section2__div1--index .section2__span--index {
+    font-size: 20px;
+  }
+  .section2__div2--index {
     flex-direction: column-reverse;
     margin-bottom: 20px;
   }
-  .section2__div1--index .section2__img1--index {
-    height: 300px;
-    width: 350px;
+  .section2__div2--index .section2__img2--index {
+    height: 200px;
+    width: 250px;
   }
   .section2__div2--index {
     flex-direction: column;
@@ -406,7 +404,7 @@
     padding: 10px;
   }
   .section2--conocenos .section2__iframe {
-    height: 250px;
+    height: 300px;
     width: 200px;
   }
   .div--conocenos {
@@ -417,20 +415,20 @@
     font-size: 20px;
   }
   .section--donde {
-    grid-template-areas: "texto" "div" "foto";
     margin: 10px;
   }
   .section--donde .section__div--mapa {
     padding-left: 10px;
     padding-top: 10px;
+    width: 280px;
   }
   .section--donde .section__div--mapa .section__iframe--mapa {
     height: 300px;
     width: 250px;
   }
-  .section--donde .section__img--mapa {
-    height: 300px;
-    width: 350px;
+  .carousel-inner .carousel-item .carousel__img {
+    height: 350px;
+    width: 280px;
   }
   .div--carrito {
     display: flex;
@@ -438,9 +436,8 @@
     margin-left: 15px;
     gap: 30px;
   }
-  .div--carrito .div__img--carrito {
-    height: 300px;
-    width: 350px;
+  .div--carrito .div__form {
+    width: 280px;
   }
   .div--contacto {
     display: flex;
@@ -448,11 +445,10 @@
     margin-left: 15px;
     gap: 30px;
   }
-  .div--contacto .form__div--boton {
-    justify-items: center;
+  .div--contacto .div__form--contacto {
+    width: 280px;
   }
-  .div--contacto .div__img--contacto {
-    height: 300px;
-    width: 350px;
+  .div--contacto .div__form--contacto .form__div--boton {
+    justify-items: center;
   }
 }/*# sourceMappingURL=main.css.map */

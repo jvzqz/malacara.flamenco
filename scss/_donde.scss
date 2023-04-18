@@ -1,31 +1,25 @@
-/*maqueto con grid*/
-
-.section--donde{
-    display: grid;
-    grid-template-areas: "texto texto" "div foto"; 
+.section--donde {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: $margin;
-    gap: 30px;
+}
 
-    .section__p--mapa {
-        grid-area: texto;
-    }
 
-    .section__div--mapa {
-        grid-area: div;
-        background-image: radial-gradient($color, black);
-        padding-left: 30px;
-        padding-top:10px;
+.section__div--mapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    background-image: radial-gradient(rgb(106, 6, 113), $color);
+    border-radius: 15px;
+    gap: 20px;
+    padding: 30px;
     
-        .section__iframe--mapa{
-            height: 400px;
-            width: 500px;
-        }
+    .section__iframe--mapa{
+        height: 400px;
+        width: 500px;
     }
-        
-    .section__img--mapa {
-        grid-area: foto;
-        height: 500px;
-        width: 600px;
-    }
-    }
+}
+
 

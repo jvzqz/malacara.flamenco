@@ -1,25 +1,23 @@
 .div--carrito {
     display: flex;
-    margin-left: 50px;
-    gap: 30px;
-   
+    justify-content: center;
+    
     .div__form {
-        background-image: radial-gradient($color, black);
-        display:flex;
+        background-image: radial-gradient(rgb(106, 6, 113), $color);
+        border-radius: 15px;
+        display: flex;
         flex-direction: column;
-        gap:20px;
-        padding:20px;
+        justify-content: space-around;
+        gap: 10px;
+        height: 500px;
+        width: 400px;
+        padding: 10px;
     }
 
    .div__p--carrito { 
        .bastardilla {
-        font-style: italic;
-        font-size: 20px;
+           font-style: italic;
+           font-size: 20px;
        }
-   }
-
-   .div__img--carrito{
-    height: 400px;
-    width: 500px;
    }
 }

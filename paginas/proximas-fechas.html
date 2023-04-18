@@ -53,57 +53,35 @@
 
     
     <main>
-        <h1 class="titulos"> Mirá las fechas del año</h1>
+        <h1 class="titulos"> Mirá las fechas próximas</h1>
 
-        <div class="row">
-          <div class="col-4">
-            <div id="list-example" class="list-group">
-              <a class="list-group-item list-group-item-action" href="#list-item-1">Marzo</a>
-              <a class="list-group-item list-group-item-action" href="#list-item-2">Abril</a>
-              <a class="list-group-item list-group-item-action" href="#list-item-3">Mayo</a>
-              <a class="list-group-item list-group-item-action" href="#list-item-4">Junio</a>
-              <a class="list-group-item list-group-item-action" href="#list-item-5">Julio</a>
-              <a class="list-group-item list-group-item-action" href="#list-item-6">Agosto</a>
-              <a class="list-group-item list-group-item-action" href="#list-item-7">Septiembre</a>
-              <a class="list-group-item list-group-item-action" href="#list-item-8">Octubre</a>
-              <a class="list-group-item list-group-item-action" href="#list-item-9">Noviembre</a>
-              <a class="list-group-item list-group-item-action" href="#list-item-10">Diciembre</a>
+        <div>
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-          </div>
-          <div class="col-8">
-            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
-              <h4 id="list-item-1" class=".titulo">Marzo</h4>
-              <li>Viernes 17: Belén Peréz Altamira y Andrea Defelice al baile, Eugenio Romero al cante, Rodrigo Gonzales a la guitarra.</li>
-              <li>Sábado 25: Morena Iannopollo y Andrea Defelice al baile, Eugenio Romero al cante, Rodrigo Gonzales a la guitarra. </li>
-              <h4 id="list-item-2">Abril</h4>
-              <li>Sábado 11: Clara Giannoni y Lorena Diprinzio al baile, Eugenio Romero al cante, Pupi Manzano a la guitarra.</li>
-              <li>Viernes 28: Belén Peréz Altamira y Andrea Defelice al baile, Argentina Cadíz al cante, Rodrigo Gonzales a la guitarra. </li>
-              <h4 id="list-item-3">Mayo</h4>
-              <li>Viernes 12: Morena Iannopollo y Clara Giannoni al baile, Eugenio Romero al cante, Rodrigo Gonzales a la guitarra.</li>
-              <li>Viernes 26: Guadalupe Aramburu y Belén Peréz Altamira al baile, Eugenio Romero al cante, Rodrigo Gonzales a la guitarra.</li>
-              <h4 id="list-item-4">Junio</h4>
-              <li>Sábado 17: Lorena Diprinzio y Clara Giannoni al baile; Eugenio Romero al cante, Nicolás del Cid a la guitarra.</li>
-              <li>Viernes 30: Belén Peréz Altamira y Andrea Defelice al baile, Argentina Cadíz al cante, Rodrigo Gonzales a la guitarra.</li>
-              <h4 id="list-item-5">Julio</h4>
-              <li>Viernes 14: Guadalupe Aramburu y Morena Iannopollo al baile, Argentina Cadíz al cante, Rodrigo Gonzales a la guitarra </li>
-              <li>Sábado 21: Morena Iannopollo y Laura Donadini al baile, Eugenio Romero al cante, Nicolás del Cid a la guitarra. </li>
-              <h4 id="list-item-6">Agosto</h4>
-              <li>Sábado 5: Belén Peréz Altamira y Andrea Defelice al baile, Argentina Cadíz al cante, Rodrigo Gonzales a la guitarra.</li>
-              <li>Viernes 18: Guadalupe Aramburu y Laura Donadini al baile, Eugenio Romero al cante, Nicolás del Cid a la guitarra.</li>
-              <h4 id="list-item-7">Septiembre</h4>
-              <li>Sábado 9: Morena Iannopollo y Andrea Defelice al baile, Eugenio Romero al cante, Rodrigo Gonzales a la guitarra </li>
-              <li>Sábado 23: Lorena Diprinzio y Clara Giannoni al baile; Eugenio Romero al cante, Nicolás del Cid a la guitarra.</li>
-              <h4 id="list-item-8">Octubre</h4>
-              <li>Viernes 13: Guadalupe Aramburu y Belén Peréz Altamira al baile, Eugenio Romero al cante, Nicolás del Cid a la guitarra.</li>
-              <li>Sábado 21: Laura Donadini y y Morena Iannopollo al baile, Argentina Cadíz al cante, Rodrigo Gonzales a la guitarra. </li>
-              <h4 id="list-item-9">Noviembre</h4>
-              <li>Sábado 4: Lorena Diprinzio y Clara Giannoni al baile; Eugenio Romero al cante, Nicolás del Cid a la guitarra. </li>
-              <li>Viernes 24: Clara Giannoni y Morena Iannopollo al baile; Argentina Cadíz al cante, Pupi Manzano a la guitarra.</li>
-              <h4 id="list-item-10">Diciembre</h4>
-              <li>Sábado 9: Guadalupe Aramburu y Belén Peréz Altamira al baile, Eugenio Romero al cante, Nicolás del Cid a la guitarra.</li>
-                <li>Viernes 15: Clara Giannoni y Morena Iannopollo al baile; Argentina Cadíz al cante, Pupi Manzano a la guitarra.</li>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../imagenes/flyer1.jpg" class="d-block m-auto carousel__img" alt="flyermarzo">
+              </div>
+              <div class="carousel-item">
+                <img src="../imagenes/flyer2.png" class="d-block m-auto carousel__img" alt="flyermarzo">
+              </div>
+              <div class="carousel-item">
+                <img src="../imagenes/flyer3.jpg" class="d-block m-auto carousel__img" alt="flyerabril">
+              </div>
             </div>
-          </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>   
         </div> 
     </main>
 
